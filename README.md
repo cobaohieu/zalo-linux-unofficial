@@ -60,12 +60,14 @@ Zalo will be installed to ~/.local/share/Zalo
 
 ***Some apt should install first ***
 ```bash
-sudo apt install wget git python3 python3-pip 
+sudo apt install wget git  unzip python3 python3-pip python3-setuptools python3-dev -y
+sudo apt install libjpeg8-dev zlib1g-dev libtiff-dev libfreetype6 libfreetype6-dev libwebp-dev libopenjp2-7-dev libopenjp2-7-dev libgtk-3-0 libnotify4 libjpeg8-dev zlib1g-dev libtiff-dev libfreetype6 libfreetype6-dev libwebp-dev libopenjp2-7-dev -y
+sudo apt install python3-pil -y
 ```
 
 ***Python3: Namespace AppIndicator3 not available***
 ```bash
-sudo apt install gir1.2-appindicator3-0.1
+sudo apt install gir1.2-appindicator3-0.1 -y
 ```
 ***[855265:0809/185712.193181:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/ubuntu/.local/share/Zalo/electron-v22.3.27-linux-x64/chrome-sandbox is owned by root and has mode 4755.***
 ```bash
@@ -84,8 +86,11 @@ There will be some bugs, as I don't have an understanding of how electron work, 
 
 I'm not sure about this security. This app is just quick support to text and do not have many function as the official app from Zalo VNG. I hope you could understand for this inconvenience.
 
-# Many thanks to
-[https://github.com/realdtn2/zalo-linux-unofficial-2024]
-[https://github.com/huanhoahongso3-collab/zalo-linux-unofficial/tree/main]
-[https://gist.github.com/muratgozel/fdb854885d6a300004430239dd1f5cfb]
-[https://zalo.me/pc]
+## Many thanks to
+- realdtn2 https://github.com/realdtn2/zalo-linux-unofficial-2024
+
+- huanhoahongso3-collab https://github.com/huanhoahongso3-collab/zalo-linux-unofficial/tree/main
+
+- https://gist.github.com/muratgozel/fdb854885d6a300004430239dd1f5cfb
+
+- Zalo VNG https://zalo.me/pc
