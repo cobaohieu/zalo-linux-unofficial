@@ -37,7 +37,7 @@ The following steps were taken:
 
 **P.S: Do not use newer versions of Electron, if use the result will errors.**
 
-3. Command to run Zalo is:
+3. Run Zalo is:
     ```bash
     electron .
     ```
