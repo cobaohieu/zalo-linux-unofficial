@@ -7,13 +7,17 @@ Version: **25.5.3** | Year: **2025** | Base on previous version of **realdtn2** 
 ![light theme](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture2.png)
 
 ## Features support
-- THEME: DARK AND LIGHT
-- LANGUAGE: ENGLISH AND VIETNAMESE
-- CHAT
+- **Theme**
+    - Dark
+    - Light
+- **Languages**
+    - Vietnamese
+    - English
+- **Chat / Text**
 
 ## Features unsupport
-- CALL
-- SYNC DATA FROM MOBILE.
+- Call
+- Sync data with mobile
 
 ## Information
 
