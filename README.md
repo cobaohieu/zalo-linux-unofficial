@@ -1,4 +1,4 @@
-# ZaloPC for Linux OS (Unofficial) 
+# Zalo for Linux (Unofficial Port) 
 **This app was ported directly from ZaloPC for MacOS**
 
 Version: **25.5.3** | Year: **2025** | Base on previous version of **realdtn2** and **huanhoahongso3-collab**
@@ -37,7 +37,7 @@ The following steps were taken:
 
 **P.S: Do not use newer versions of Electron, if use the result will errors.**
 
-3. Run Zalo is:
+3. Command to run Zalo is:
     ```bash
     electron .
     ```
@@ -111,3 +111,4 @@ MIT License was chosen due to license of Electron
 - huanhoahongso3-collab https://github.com/huanhoahongso3-collab/zalo-linux-unofficial/tree/main
 - https://gist.github.com/muratgozel/fdb854885d6a300004430239dd1f5cfb
 - Zalo VNG https://zalo.me/pc
+- Stack Overflow https://stackoverflow.com/questions/38523617/how-to-unpack-an-asar-file
