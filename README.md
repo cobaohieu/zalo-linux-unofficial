@@ -93,13 +93,17 @@ sudo chown root $HOME/Desktop/Zalo.desktop
 sudo chmod 4755 $HOME/Desktop/Zalo.desktop
 ```
 
-## Bugs
+## Errors, Bugs
 
 There will be some bugs, as I don't have an understanding of how electron work, I won't be able to fix any bugs.
 
 ## No Security or Hack, Cheat, Virus, Vulnerable, etc.
 
 I'm not sure about this security. This app is just quick support to text and do not have many function as the official app from Zalo VNG. I hope you could understand for this inconvenience.
+
+## License
+
+MIT License was chosen due to license of Electron
 
 ## Many thanks to
 
