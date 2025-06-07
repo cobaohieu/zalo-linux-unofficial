@@ -1,4 +1,4 @@
-# Zalo for Linux (Unofficial Port) 
+# ZaloPC for Linux OS (Unofficial) 
 **This app was ported directly from ZaloPC for MacOS**
 
 Version: **25.5.3** | Year: **2025** | Base on previous version of **realdtn2** and **huanhoahongso3-collab**
