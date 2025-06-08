@@ -94,6 +94,18 @@ sudo chown root $HOME/Desktop/Zalo.desktop
 sudo chmod 4755 $HOME/Desktop/Zalo.desktop
 ```
 
+## Issues
+
+In case you see some electron start when you logging to Desktop or restart Ubuntu.
+
+![electron startup shortcut](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture4.png)
+
+Please open terminal and type as below
+
+```
+rm -rf ~/.config/autostart/electron.desktop
+```
+
 ## Errors, Bugs
 
 There will be some bugs, as I don't have an understanding of how electron work, I won't be able to fix any bugs.
