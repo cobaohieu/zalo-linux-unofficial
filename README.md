@@ -69,7 +69,7 @@ To install Zalo for Linux, you can choose one of these two:
 **1. Installation with curl**
 
 ```bash
-sh -c "$(curl -sSL https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/main/install_curl.sh)"
+sh -c "$(curl -sSL https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/install_curl.sh)"
 ```
 
 **2. Installation by cloning source**
