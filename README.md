@@ -3,8 +3,9 @@
 
 Version: **25.5.3** | Year: **2025** | Base on previous version of **realdtn2** and **huanhoahongso3-collab**
 
-![dark theme](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture1.png)
+![phone login](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture3.jpg)
 ![light theme](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture2.png)
+![dark theme](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture1.png)
 
 ## Features support
 - **Theme**
