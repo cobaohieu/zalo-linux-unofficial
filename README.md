@@ -1,7 +1,7 @@
 # Zalo for Linux (Unofficial Port) 
 **This app was ported directly from ZaloPC for MacOS**
 
-Version: **25.5.3** | Year: **2025** | Base on previous version of **realdtn2** and **huanhoahongso3-collab**
+Version: **25.6.1** | Year: **2025** | Base on previous version of **realdtn2** and **huanhoahongso3-collab**
 
 ![phone login](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture3.jpg)
 ![light theme](https://raw.githubusercontent.com/cobaohieu/zalo-linux-unofficial/refs/heads/main/images/picture2.png)
