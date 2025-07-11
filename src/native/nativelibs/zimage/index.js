@@ -31,7 +31,11 @@ function getOS() {
 		//     os = 'ia32';
 		// }
 	} else if (process.platform === 'darwin') {
-		os = 'darwin';
+		if (process.arch === 'arm64') {
+			os = 'darwin_arm64';
+		} else {
+			os = 'darwin_x64';
+		}
 	}
 }
 
@@ -128,12 +132,12 @@ function getLib(options) {
 	});
 }
 
-function preExtractLib(os) {
-	try {
-		rimraf.sync(`${__dirname}/${os}_temp`);
-		rimraf.sync(`${__dirname}/${os}`);
-	} catch (err) {}
-}
+// function preExtractLib(os) {
+// 	try {
+// 		rimraf.sync(`${__dirname}/${os}_temp`);
+// 		rimraf.sync(`${__dirname}/${os}`);
+// 	} catch (err) {}
+// }
 
 function isFileAvailabe(path) {
 	try {
@@ -146,35 +150,35 @@ function isFileAvailabe(path) {
 	}
 }
 
-function extractLib(os) {
-	return new Promise((resolve, reject) => {
-		if (!decompress) {
-			reject(LIB_EXTRACT_NOT_FOUND);
-			return;
-		}
-		if (isFileAvailabe(`${__dirname}/${os}.za`)) {
-			decompress(`${__dirname}/${os}.za`, `${__dirname}/${os}_temp`, { strip: 1 })
-				.then((files) => {
-					const fs = require('fs');
-					fs.rename(`${__dirname}/${os}_temp`, `${__dirname}/${os}`, (error) => {
-						if (error) {
-							try {
-								fs.unlink(`${__dirname}/${os}_temp`);
-							} catch (err) {}
+// function extractLib(os) {
+// 	return new Promise((resolve, reject) => {
+// 		if (!decompress) {
+// 			reject(LIB_EXTRACT_NOT_FOUND);
+// 			return;
+// 		}
+// 		if (isFileAvailabe(`${__dirname}/${os}.za`)) {
+// 			decompress(`${__dirname}/${os}.za`, `${__dirname}/${os}_temp`, { strip: 1 })
+// 				.then((files) => {
+// 					const fs = require('fs');
+// 					fs.rename(`${__dirname}/${os}_temp`, `${__dirname}/${os}`, (error) => {
+// 						if (error) {
+// 							try {
+// 								fs.unlink(`${__dirname}/${os}_temp`);
+// 							} catch (err) {}
 
-							reject(EXTRACT_LIB_RENAME_ERROR);
-							return;
-						}
-						resolve();
-					});
-				})
-				.catch((err) => {
-					reject(EXTRACT_ERROR);
-				});
-		} else {
-			reject(LIB_ZIP_NOT_FOUND);
-		}
-	});
-}
+// 							reject(EXTRACT_LIB_RENAME_ERROR);
+// 							return;
+// 						}
+// 						resolve();
+// 					});
+// 				})
+// 				.catch((err) => {
+// 					reject(EXTRACT_ERROR);
+// 				});
+// 		} else {
+// 			reject(LIB_ZIP_NOT_FOUND);
+// 		}
+// 	});
+// }
 
 module.exports = getLib;
